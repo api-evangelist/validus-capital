@@ -1,17 +1,37 @@
 aid: validus-capital
 name: Validus Capital
-description: 'Validus Capital is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Validus is a Southeast Asian SME supply-chain and working-capital financing platform operated
+  by Validus Investment Holdings Pte Ltd (UEN 201803167H), headquartered at Asia Square Tower 2 in Singapore
+  and founded in 2015 to address the unmet financing needs of small and medium enterprises. The group
+  runs country businesses across four markets — Batumbu (PT Berdayakan Usaha Indonesia) in Indonesia,
+  Siam Validus in Thailand, Validus Vietnam, and, until April 2025, Validus Capital Pte Ltd in Singapore
+  — offering invoice financing, purchase-order financing, vendor/supply-chain financing programs, working
+  capital loans, SME business accounts and corporate cards funded by accredited and institutional investors.
+  Validus Capital Pte Ltd, the Singapore subsidiary and the entity this profile is named for, was acquired
+  outright by GXS Bank on 15 April 2025 and now trades as GXS Capital; the validus.sg domain redirects
+  to the group site. The group has disbursed more than US$5 billion across its markets and has raised
+  capital from Vertex Ventures, FMO, Citi, HSBC, Oikocredit and K3 Ventures. Validus publishes no public
+  developer program, API reference or machine-readable API contract on any of its group or country domains.
+image: https://validusgrp.com/wp-content/uploads/2025/01/Logo-Red.png
 url: https://raw.githubusercontent.com/api-evangelist/validus-capital/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Financial Services
+- Lending
+- SME Finance
+- Fintech
+- Supply Chain Finance
+- Invoice Financing
+- Working Capital
+- Southeast Asia
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,60 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/validus-capital-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/validus-capital-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/validus-capital_stock/
+  url: https://validusgrp.com/
+- type: Blog
+  url: https://validusgrp.com/news-insights/
+- type: BlogRSS
+  url: https://validusgrp.com/feed/
+- type: TermsOfService
+  url: https://validusgrp.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://validusgrp.com/assets/privacy-policy.pdf
+- type: WellKnown
+  url: well-known/validus-capital-well-known.yml
+- type: SecurityTxt
+  url: well-known/validus-capital-security.txt
+- type: Security
+  url: security/validus-capital-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/validus-capital-conformance.yml
+- type: Compliance
+  url: conformance/validus-capital-conformance.yml
+- type: LLMsTxt
+  url: llms/validus-capital-llms.txt
+- type: Plans
+  url: plans/validus-capital-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/validus-capital-rate-limits.yml
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: 'Validus ships SME lending only as an end-user product: the four-page group site at validusgrp.com
+    has no developer section, no developer.* or docs.* subdomain resolves on any Validus domain, /openapi.json
+    and /swagger.json 404 on every group and country host, and the one live API host, api.batumbu.id,
+    answers every path with a plain-text "404 page not found" (the Singapore entity, Validus Capital Pte
+    Ltd, was also sold to GXS Bank in April 2025 and validus.sg now redirects to the group site).'
+  evidence:
+  - url: https://validusgrp.com/openapi.json
+    status: 404
+  - url: https://validusgrp.com/developers/
+    status: 404
+  - url: https://api.batumbu.id/openapi.json
+    status: 404
+  - url: https://batumbu.id/.well-known/api-catalog
+    status: 404
+  - url: https://validus.sg/
+    status: 200
+  - url: https://validusgrp.com/.well-known/security.txt
+    status: 200
+  checked: '2026-09-02'

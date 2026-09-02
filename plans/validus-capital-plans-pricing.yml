@@ -1,0 +1,21 @@
+generated: '2026-09-02'
+method: searched
+source: https://validusgrp.com/
+plan_count: 0
+plans: []
+note: >-
+  Validus publishes no API plans, developer tiers or machine-readable pricing
+  of any kind, because it publishes no API. The group site (validusgrp.com) is
+  a four-page corporate site — home, legal disclaimers, terms of use, news —
+  with no pricing page and no product pricing at all; commercial terms for the
+  lending products are set per borrower at application ("Full Terms and
+  Conditions are available upon application", validusgrp.com footer). The
+  country brands quote indicative financing rates on their own marketing sites
+  but those are loan pricing, not API plans, and are deliberately not recorded
+  here as such. plan_count: 0 is an honest zero, not a gap in this probe.
+evidence:
+- url: https://validusgrp.com/
+  status: 200
+- url: https://validusgrp.com/page-sitemap.xml
+  status: 200
+  note: full page sitemap lists only 4 pages; no pricing page exists

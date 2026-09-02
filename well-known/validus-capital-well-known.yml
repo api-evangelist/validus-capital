@@ -1,0 +1,99 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTP probes of every Validus Group brand host
+note: >-
+  Probed the named RFC-registered paths on every host Validus Group operates:
+  the group site (validusgrp.com), the country brands (validus.vn,
+  batumbu.id, siamvalidus.co.th), the Singapore successor brand
+  (gxscapital.sg, the business GXS Bank acquired in April 2025) and the one
+  live API host found (api.batumbu.id). Only /.well-known/security.txt is
+  served, and it is served identically from validusgrp.com and validus.vn.
+  That security.txt is EXPIRED — its Expires field reads 2026-02-18T09:31:00Z,
+  which is in the past as of this probe, so an RFC 9116 consumer is required
+  to treat its contents as stale. Every other path 404s. gxscapital.sg
+  answers /llms.txt with HTTP 200 but the body is the Webflow single-page
+  HTML shell, not an llms.txt document, so it is recorded as a miss.
+hosts:
+- host: validusgrp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: well-known/validus-capital-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: validus.vn
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: well-known/validus-capital-security.txt
+    note: byte-identical to the validusgrp.com document
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: batumbu.id
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: siamvalidus.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: gxscapital.sg
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: api.batumbu.id
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404

@@ -1,0 +1,59 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  Validus Group brand sites (validusgrp.com, batumbu.id, siamvalidus.co.th) and
+  live protocol probes. No machine-readable API contract exists for this
+  provider, so every technical/API conformance assertion below is recorded as
+  not-applicable rather than false.
+note: >-
+  Validus is a regulated non-bank SME lender, not an API vendor. The
+  conformance that is genuinely published is FINANCIAL-REGULATORY, stated on
+  the country brand sites, and it is recorded here with the page it was read
+  from. The API/protocol standards this pipeline normally assesses cannot be
+  assessed at all because Validus publishes no OpenAPI, AsyncAPI, GraphQL SDL
+  or any other machine-readable contract on any host — see x-coverage in
+  apis.yml. No domain standard for this market (ISO 20022, FDX, BIAN, OpenID
+  FAPI) is declared by any Validus contract, because there is no contract to
+  declare it in; this is recorded as an honest absence, not a failure.
+regulatory:
+- id: ojk-indonesia
+  regime: Otoritas Jasa Keuangan (OJK), Indonesia
+  entity: PT Berdayakan Usaha Indonesia (Batumbu)
+  conforms: true
+  evidence:
+    claim: '"Licensed & Supervised by the Financial Services Authority (OJK)"'
+    url: https://batumbu.id/en
+    http_status: 200
+- id: sec-thailand-crowdfunding
+  regime: Office of the Securities and Exchange Commission (ก.ล.ต.), Thailand
+  entity: Siam Validus Capital Co., Ltd.
+  conforms: true
+  evidence:
+    claim: >-
+      Site states Siam Validus is the first foreign company approved by the Thai
+      SEC to operate a crowdfunding portal for SME debenture fundraising.
+    url: https://siamvalidus.co.th/
+    http_status: 200
+standards:
+- id: oauth2
+  conforms: na
+  evidence: No published API contract or authorization surface to assess.
+- id: oidc
+  conforms: na
+  evidence: /.well-known/openid-configuration returns 404 on every Validus host.
+- id: rfc9457
+  conforms: na
+  evidence: No published error surface or API contract to assess.
+- id: pagination
+  conforms: na
+  evidence: No published API contract to assess.
+- id: idempotency
+  conforms: na
+  evidence: No published API contract to assess.
+- id: rfc9116
+  conforms: partial
+  evidence: >-
+    /.well-known/security.txt is served on validusgrp.com and validus.vn
+    (HTTP 200) with a Contact field, but its Expires field (2026-02-18T09:31:00Z)
+    is in the past and it carries no Policy field, so it is a stale RFC 9116
+    document.

@@ -1,0 +1,18 @@
+generated: '2026-09-02'
+method: searched
+source: https://validusgrp.com/
+limit_count: 0
+rate_limits: []
+note: >-
+  No published rate limits, because Validus publishes no API and no developer
+  documentation on any group or country host. The one live API host found,
+  api.batumbu.id, is an unrouted Go backend that answers every probed path with
+  a plain-text "404 page not found" and returns no RateLimit-*, X-RateLimit-*
+  or Retry-After headers on any response. limit_count: 0 is an honest zero.
+evidence:
+- url: https://api.batumbu.id/
+  status: 404
+  note: 'plain-text body "404 page not found"; no rate-limit response headers observed'
+- url: https://validusgrp.com/
+  status: 200
+  note: no developer documentation on the site to state limits
