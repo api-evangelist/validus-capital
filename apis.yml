@@ -23,7 +23,7 @@ created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Lending
 - SME Finance
 - Fintech
@@ -43,6 +43,7 @@ tags_raw:
 - Working Capital
 - Southeast Asia
 - Singapore
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
