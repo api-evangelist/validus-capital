@@ -2,13 +2,6 @@
   "repo": "validus-capital",
   "feeds": [
     {
-      "source": "https://validusgrp.com/",
-      "feed_url": "https://validusgrp.com/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://validusgrp.com/news-insights/",
       "feed_url": "https://validusgrp.com/feed/",
       "title": "",
@@ -24,5 +17,5 @@
     }
   ],
   "post_count": 6,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
