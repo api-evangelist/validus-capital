@@ -64,5 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Validus Capital is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/validus-capital_stock/
+Validus is a Southeast Asian SME supply-chain and working-capital financing platform operated by Validus Investment Holdings Pte Ltd (UEN 201803167H), headquartered at Asia Square Tower 2 in Singapore and founded in 2015 to address the unmet financing needs of small and medium enterprises. The group runs country businesses across four markets — Batumbu (PT Berdayakan Usaha Indonesia) in Indonesia, Siam Validus in Thailand, Validus Vietnam, and, until April 2025, Validus Capital Pte Ltd in Singapore — offering invoice financing, purchase-order financing, vendor/supply-chain financing programs, working capital loans, SME business accounts and corporate cards funded by accredited and institutional investors. Validus Capital Pte Ltd, the Singapore subsidiary and the entity this profile is named for, was acquired outright by GXS Bank on 15 April 2025 and now trades as GXS Capital; the validus.sg domain redirects to the group site. The group has disbursed more than US$5 billion across its markets and has raised capital from Vertex Ventures, FMO, Citi, HSBC, Oikocredit and K3 Ventures. Validus publishes no public developer program, API reference or machine-readable API contract on any of its group or country domains.
+
+**Areas:** Company · Financial Services · Lending · SME Finance · Fintech · Supply Chain Finance · Invoice Financing · Working Capital · Southeast Asia · Singapore
+
+## Validus Capital on APIs.io
+
+Everything profiled for Validus Capital is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/validus-capital/](https://apis.io/providers/validus-capital/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Validus Capital Domain Security](https://apis.io/security/validus-capital/validus-capital-domain-security/)
+- [Validus Capital Vulnerability Disclosure](https://apis.io/security/validus-capital/validus-capital-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Validus Capital Plans Pricing](https://apis.io/plans/validus-capital/validus-capital-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Validus Capital Rate Limits](https://apis.io/rate-limits/validus-capital/validus-capital-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://validusgrp.com/)
+- [Blog](https://validusgrp.com/news-insights/)
+- [Terms of service](https://validusgrp.com/terms-of-use/)
+- [Privacy policy](https://validusgrp.com/assets/privacy-policy.pdf)
+
+## API Evangelist rating
+
+**Kin Score 14.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 28.9 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/validus-capital/](https://apis.io/providers/validus-capital/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Validus Capital: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/validus-capital/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
